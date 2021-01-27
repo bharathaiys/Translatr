@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>TRNSLATR</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <!-- Optional theme -->
+  </head>
+  <body>
+    <div id="top">
+      <div class="colleft">
+        <div class="thead">
+          TRANSLATR
+        </div>
+        <div
+          class="custom-select left"
+          style="width: 200px; margin-left:212px; z-index:1"
+        >
+          <select id="l">
+            <option value="0"> English</option>
+            <option value="1">French</option>
+            <option value="2">Spanish</option>
+            <option value="3">Hindi</option>
+            <option value="4"> English</option>
+          </select>
+        </div>
+        <img
+          src="https://cdn.glitch.com/4da415a2-091d-4e0e-b05d-ccca2c17db93%2Fleft.png?v=1611420847316"
+          alt=""
+          id="left"
+          style="z-index:0"
+        />
+        <br />
+        <textarea
+          name=""
+          id="lin"
+          placeholder="Type Something (in language 1)"
+          class="message_input"
+        ></textarea>
+        <br />
+        <img
+          src="https://cdn.glitch.com/4da415a2-091d-4e0e-b05d-ccca2c17db93%2Fsend.png?v=1611420847095"
+          alt=""
+          id="send1"
+          class="send send_message"
+        />
+      </div>
+      <div class="colcenter">
+        <img
+          src="https://cdn.glitch.com/4da415a2-091d-4e0e-b05d-ccca2c17db93%2Fcl.png?v=1611420847175"
+          alt=""
+          id="cl"
+          class="clr"
+        />
+        <div id="cbox">
+          <div class="em"></div>
+        </div>
+        <div id="rev">
+          <span id="q">
+            How would you rate the translations on a scale of 1 to 10?
+          </span>
+          <div>
+          <input
+            type="text"
+            id="rating"
+            placeholder="1-10"
+                 maxlength="2"/> 
+  
+          <div id="sr">
+            Rate
+          </div>
+
+          <div id="qual">
+            <a
+              href="https://qfreeaccountssjc1.az1.qualtrics.com/jfe/form/SV_57I2n0567flx1MW"
+              target="_blank"
+              id="tt"
+            >
+              Participate in Survey
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="colright">
+        <div id="rr">
+          <div
+            class="custom-select right"
+            style="width: 200px; margin-left:50px; margin-top:127px"
+          >
+            <select id="r">
+              <option value="0"> French</option>
+              <option value="1">English</option>
+              <option value="2">Spanish</option>
+              <option value="3">Hindi</option>
+              <option value="4"> French</option>
+            </select>
+          </div>
+          <img
+            src="https://cdn.glitch.com/4da415a2-091d-4e0e-b05d-ccca2c17db93%2Fright.png?v=1611420847280"
+            alt=""
+            id="right"
+          />
+        </div>
+        <br />
+        <textarea
+          name=""
+          id="rin"
+          placeholder="Type Something (in language 2)"
+          class="message_input2"
+        ></textarea>
+        <br />
+        <img
+          src="https://cdn.glitch.com/4da415a2-091d-4e0e-b05d-ccca2c17db93%2Fsend.png?v=1611420847095"
+          alt=""
+          id="send2"
+          class="send send_message2"
+          style="margin-left: 55px; margin-top:12px;"
+        />
+      </div>
+    </div>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
