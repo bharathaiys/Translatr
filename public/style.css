@@ -1,0 +1,314 @@
+body {
+  background-image: url(https://cdn.glitch.com/4da415a2-091d-4e0e-b05d-ccca2c17db93%2Fbg.png?v=1611420847543);
+  background-size: cover;
+  font-family: "Inter";
+  font-size: 18px;
+  letter-spacing: 1.29px;
+}
+* {
+  font-family: "Inter";
+  font-size: 18px;
+  letter-spacing: 1.29px;
+}
+.thead {
+  font-family: "Nova Round", Inter;
+  font-weight: 400;
+  color: #BCBBFA;
+  font-size: 40px;
+  letter-spacing: 6.25px;
+  margin-top: 40px;
+  margin-left: 125px;
+  margin-bottom: 40px;
+}
+
+#left {
+  width: 270px;
+  height: 229px;
+  margin-left: 70px;
+}
+
+#lin {
+  margin-left: 75px;
+  height: 100px;
+  width: 316px;
+  border-radius: 30px;
+  background-image: linear-gradient(to bottom right, #1B3463, #12234D);
+  border: none;
+  padding-left: 16px;
+  padding-top: 20px;
+  margin-top: 15px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.596);
+  letter-spacing: 1.2;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+.send {
+  cursor: pointer;
+  height: 39px;
+  width: 116px;
+  z-index: 9;
+}
+#send1 {
+  margin-top: 15px;
+  margin-left: 280px;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 0.5; /* Firefox */
+}
+#top {
+  display: grid;
+  grid-template-columns: 33.3vw 33.3vw auto;
+  grid-template-areas: "tl tc tr";
+}
+#colleft {
+  grid-area: tl;
+}
+#colcenter {
+  grid-area: tc;
+}
+#colright {
+  grid-area: tr;
+}
+#cbox {
+  height: 520px;
+  width: 445px;
+  margin-top: 80px;
+  border-radius: 30px;
+  background-image: linear-gradient(to bottom, #161730, #21223B);
+  overflow-y: auto;
+}
+#cl {
+  width: 41px;
+  position: absolute;
+  margin-top: 82px;
+  margin-left: 370px;
+  padding-top: 15px;
+  cursor: pointer;
+}
+#cl1 {
+  width: 41px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 370px;
+  padding-top: 15px;
+  opacity: 0;
+}
+#rr {
+  display: inline;
+}
+#right {
+  height: 286px;
+  width: 207px;
+  margin-top: -40px;
+  margin-left: 155px;
+  margin-bottom: 25px;
+}
+#rin {
+  margin-left: 55px;
+  height: 100px;
+  width: 316px;
+  border-radius: 30px;
+  background-image: linear-gradient(to bottom right, #251450, #301F72);
+  border: none;
+  padding-left: 16px;
+  padding-top: 20px;
+  margin-top: -10px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.596);
+  letter-spacing: 1.2;
+}
+
+.l_im {
+  background-color: #1E92AC;
+  margin-top: 17px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border-radius: 20px;
+  width: fit-content;
+  z-index: 1;
+  min-height: 45px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.r_im {
+  
+  background-color: #8C1881;
+  margin-top: 17px;
+  margin-left: auto;
+  margin-right: 16px;
+  border-radius: 20px;
+  width: fit-content;
+  z-index: 1;
+  min-height: 45px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.l_rm {
+  
+  background-color: #1D556E;
+  margin-top: -8px;
+  margin-left: 28px;
+  margin-right: 16px;
+  border-radius: 20px;
+  width: fit-content;
+  z-index: -1;
+  min-height: 45px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.r_rm {
+ 
+  background-color: #55195C;
+  margin-top: -8px;
+  margin-left: auto;
+  margin-right: 28px;
+  border-radius: 20px;
+  width: fit-content;
+  z-index: -1;
+  min-height: 45px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.mtxt {
+  font-size: 14px;
+  letter-spacing: 1.1px;
+  padding: 12px 12px;
+  display: inline-block;
+}
+::-webkit-scrollbar-track {
+  height: 30px;
+  width: 30px;
+}
+.em {
+  height: 50px;
+}
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: None; /*hide original SELECT element: */
+}
+
+.select-selected {
+  border-radius: 13px;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 17px;
+  right: 40px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #070824 transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #070824 transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,
+.select-selected {
+  width: 180px;
+  height: 40px;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1.29px;
+  background-color: #B1B0ED;
+  color: #070824;
+  font-size: 16px;
+  padding: 8px 16px;
+  opacity: 0.97;
+  cursor: pointer;
+}
+
+.select-items div {
+  border-radius: 13px;
+  margin-top: 6px;
+  margin-bottom: 5px;
+}
+/* Style items (options): */
+.select-items {
+  margin-top: 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: #a9a8f3;
+}
+
+#rev {
+  padding-left: 20px;
+  padding-top: 20px;
+  color: #fff;
+
+  font-size: 12px;
+}
+#rating {
+  height: 30px;
+  width: 90px;
+  margin-top: 8px;
+  margin-left: 130px;
+  border-radius: 13px;
+  background-color: #20213A;
+  border: None;
+  padding-left: 31px;
+  color: white;
+  font-size: 13px;
+}
+
+#sr {
+  height: 30px;
+  width: 60px;
+  margin-left: 230px;
+  margin-top: -30px;
+  border-radius: 13px;
+  padding-left: 16px;
+  padding-top: 6px;
+  font-size: 13px;
+  background-color: #a2a1ee;
+  color: #070824;
+  cursor: pointer;
+}
+#qual {
+  height: 30px;
+  width: 168px;
+  margin-left: 130px;
+  margin-top: 10px;
+  border-radius: 13px;
+  padding-left: 11px;
+  padding-top: 0px;
+
+  background-color: #8B1B4C;
+  color: rgba(255, 255, 255, 0.84);
+  cursor: pointer;
+}
+#tt {
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 12px;
+  text-decoration: none;
+}
+
+#q {
+  font-size: 12px;
+  color: #fff;
+  opacity: 0.7;
+}
